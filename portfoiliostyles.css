@@ -310,6 +310,15 @@ font-family: 'Inter', sans-serif;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   text-align: center;
   color: #333;
+  min-height: 20px;
+   word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 10px;
+  word-break: break-word;
 }
 
 
@@ -339,7 +348,7 @@ justify-content: center;
 }
 
 
-@media (max-width: 480px) {
+@media (min-width: 370px) and (max-width: 380px) {
     .nav a {
       font-size: 12px;
     }
@@ -350,5 +359,9 @@ justify-content: center;
     justify-content: center;
       padding: 10px;
       gap: 15px;
+    }
+
+    .skills-list{
+      grid-template-columns: 1fr;
     }
   }
