@@ -304,21 +304,21 @@ font-family: 'Inter', sans-serif;
 }
 
 .skills-list li {
-  background: #fff;
+   background: #fff;
   padding: 10px 15px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   text-align: center;
   color: #333;
-  min-height: 20px;
-   word-wrap: break-word;
-  overflow-wrap: break-word;
+  min-height: 40px;
+  font-size: 15px;
+
+  /* Wrapping and sizing fixes */
+  overflow-wrap: break-word;   /* modern and works well */
+  word-break: break-word;      /* breaks long words mid-word if needed */
   white-space: normal;
   max-width: 100%;
   box-sizing: border-box;
-  font-size: 15px;
-  padding: 10px;
-  word-break: break-word;
 }
 
 
